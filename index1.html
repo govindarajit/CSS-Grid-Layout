@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Css grid</title>
+</head>
+
+<style>  
+.wrapper
+{
+    display:grid;
+    grid-template-columns:repeat(3, 2fr);
+    grid-auto-rows:minmax(100px,auto);
+    grid-gap:1em;
+ 
+}
+.nested{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-gap:1em;
+    grid-auto-rows:100px;
+
+}
+.nested > div{
+    border:rgb(12, 7, 7) 1px solid;
+    padding:1em;
+
+}
+
+.wrapper > div{
+padding:1em;
+background: #eee;
+}
+        .wrapper > div:nth-child(odd){
+
+            background: #ddd;
+        }</style>
+<body>
+    <div class="wrapper">
+
+        <div>
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus inventore distinctio omnis aliquam mollitia est maxime corporis reiciendis, fugiat esse incidunt sapiente quisquam laudantium dicta nulla vero modi, voluptates fuga?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus inventore distinctio omnis aliquam mollitia est maxime corporis reiciendis, fugiat esse incidunt sapiente quisquam laudantium dicta nulla vero modi, voluptates fuga?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus inventore distinctio omnis aliquam mollitia est maxime corporis reiciendis, fugiat esse incidunt sapiente quisquam laudantium dicta nulla vero modi, voluptates fuga?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus inventore distinctio omnis aliquam mollitia est maxime corporis reiciendis, fugiat esse incidunt sapiente quisquam laudantium dicta nulla vero modi, voluptates fuga?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus inventore distinctio omnis aliquam mollitia est maxime corporis reiciendis, fugiat esse incidunt sapiente quisquam laudantium dicta nulla vero modi, voluptates fuga?
+        </div>
+        <div class="nested">
+            <div>Lorem</div>
+
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div><div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div><div>Lorem</div>
+             
+            <div>Lorem</div><div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+
+            
+        </div><div>
+            Lorem ipsum dolor sit amet.
+        </div><div>
+            Lorem ipsum dolor sit amet.
+        </div><div>
+            Lorem ipsum dolor sit amet.
+        </div><div>
+            Lorem ipsum dolor sit amet.
+        </div><div>
+            Lorem ipsum dolor sit amet.
+        </div><div>
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+</body>
+</html>
